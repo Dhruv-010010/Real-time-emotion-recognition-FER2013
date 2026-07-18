@@ -1,0 +1,12 @@
+tensorflow>=2.16
+opencv-python>=4.8
+numpy>=1.26
+streamlit>=1.30
+streamlit-webrtc>=0.47
+matplotlib>=3.7
+seaborn>=0.13
+scikit-learn>=1.3
+Pillow>=10.0
+joblib>=1.3
+jupyterlab>=4.0
+ipykernel>=6.0
