@@ -1,0 +1,9 @@
+__pycache__
+.ipynb_checkpoints
+Data/
+Outputs/CNN-trained-model-CW.keras
+Outputs/CNN-trained-model-WCW.keras
+Outputs/final_trained_model.keras
+Outputs/training_history1.pkl
+Outputs/training_history2.pkl
+src/__pycache__
