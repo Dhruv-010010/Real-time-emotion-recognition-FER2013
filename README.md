@@ -64,8 +64,6 @@ streamlit run run.py
 
 Open the local URL printed by Streamlit (usually `http://localhost:8501`) and allow browser camera access when prompted.
 
-> [!IMPORTANT]
-> Commit `Models/final_trained_model.keras` when you publish the repository. The application loads this bundled model automatically, using a path relative to the cloned project folder. No personal file path needs to be changed.
 
 ## 🧩 How the application is organised
 
