@@ -52,7 +52,19 @@ class EmotionProcessor(VideoProcessorBase):
 webrtc_streamer(
     key="emotion-detection",
     video_processor_factory=EmotionProcessor,
-    rtc_configuration=RTCConfiguration(
-        {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
-    ),
+    media_stream_constraints={"video": True, "audio": False},
+    rtc_configuration=RTCConfiguration({
+        "iceServers": [
+            {"urls": ["stun:stun.l.google.com:19302"]},
+            {
+                "urls": [
+                    "turn:openrelay.metered.ca:80",
+                    "turn:openrelay.metered.ca:443",
+                    "turns:openrelay.metered.ca:443?transport=tcp",
+                ],
+                "username": "openrelayproject",
+                "credential": "openrelayproject",
+            },
+        ]
+    }),
 )
