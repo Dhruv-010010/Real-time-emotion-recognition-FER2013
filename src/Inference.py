@@ -56,7 +56,6 @@ def load_model(model_path: str):
         return model
     except Exception as e:
         print(f"[ERROR] Failed to load model: {e}")
-        sys.exit(1)
 
 
 def load_face_detector():
@@ -65,7 +64,6 @@ def load_face_detector():
     face_cascade = cv2.CascadeClassifier(cascade_path)
     if face_cascade.empty():
         print("[ERROR] Could not load Haar Cascade face detector.")
-        sys.exit(1)
     print("[INFO] Face detector loaded.")
     return face_cascade
 
